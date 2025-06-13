@@ -10,7 +10,7 @@ try {
     console.log(decoded);
     if (decoded) {
         //@ts-ignore
-        req.userId=decoded.id;
+        req.userId=decoded.userId;
         next();
     }
 } catch (error) {
